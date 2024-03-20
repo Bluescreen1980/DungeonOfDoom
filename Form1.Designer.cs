@@ -57,7 +57,7 @@
             this.tableLayoutPanel1.Controls.Add(this.goSouth, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.goEast, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.xyLabel, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(766, 530);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(738, 490);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.60241F));
@@ -132,9 +132,9 @@
             // textField
             // 
             this.textField.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textField.Location = new System.Drawing.Point(12, 527);
+            this.textField.Location = new System.Drawing.Point(12, 490);
             this.textField.Name = "textField";
-            this.textField.Size = new System.Drawing.Size(729, 73);
+            this.textField.Size = new System.Drawing.Size(729, 115);
             this.textField.TabIndex = 2;
             this.textField.Text = resources.GetString("textField.Text");
             this.textField.Click += new System.EventHandler(this.textField_Click);
@@ -175,9 +175,9 @@
             // itemBox
             // 
             this.itemBox.Font = new System.Drawing.Font("Noto Naskh Arabic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemBox.Location = new System.Drawing.Point(474, 605);
+            this.itemBox.Location = new System.Drawing.Point(485, 617);
             this.itemBox.Name = "itemBox";
-            this.itemBox.Size = new System.Drawing.Size(322, 49);
+            this.itemBox.Size = new System.Drawing.Size(507, 37);
             this.itemBox.TabIndex = 6;
             this.itemBox.Text = "Items: -";
             this.itemBox.Click += new System.EventHandler(this.label1_Click);
@@ -195,7 +195,7 @@
             // 
             // imageFrame
             // 
-            this.imageFrame.Location = new System.Drawing.Point(77, 3);
+            this.imageFrame.Location = new System.Drawing.Point(99, 12);
             this.imageFrame.Name = "imageFrame";
             this.imageFrame.Size = new System.Drawing.Size(830, 512);
             this.imageFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

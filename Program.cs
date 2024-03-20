@@ -72,14 +72,14 @@ namespace DungeonOfDoom
 
         static void Main()
         {
-            SetInfo();
+            SetInfo(caveInfo);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
         }
 
-        public static void SetInfo()
+        public static void SetInfo(string[,,] caveInfo)
         {
             //Lisätään aloitustavarat listaan
             items.Add("Whip");
@@ -113,7 +113,7 @@ namespace DungeonOfDoom
             caveInfo[16, 10, 0] = "You came across to ancient hall of previously unknown Aztek temple. Doctor Croft wasn't sure even what heathen god did they worship.";
             caveInfo[16, 10, 1] = "../../picture4.jpg";
             caveInfo[15, 10, 0] = "Shrine of the ancient aztek god with stone slab under it. The slab resembles doorway.";
-
+            caveInfo[15, 10, 1] = "../../picture5.jpg";
         }
 
 
