@@ -57,7 +57,7 @@
             this.tableLayoutPanel1.Controls.Add(this.goSouth, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.goEast, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.xyLabel, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(547, 323);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(766, 530);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.60241F));
@@ -132,9 +132,9 @@
             // textField
             // 
             this.textField.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textField.Location = new System.Drawing.Point(12, 323);
+            this.textField.Location = new System.Drawing.Point(12, 527);
             this.textField.Name = "textField";
-            this.textField.Size = new System.Drawing.Size(529, 124);
+            this.textField.Size = new System.Drawing.Size(729, 73);
             this.textField.TabIndex = 2;
             this.textField.Text = resources.GetString("textField.Text");
             this.textField.Click += new System.EventHandler(this.textField_Click);
@@ -142,7 +142,7 @@
             // actionLook
             // 
             this.actionLook.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionLook.Location = new System.Drawing.Point(13, 450);
+            this.actionLook.Location = new System.Drawing.Point(16, 605);
             this.actionLook.Name = "actionLook";
             this.actionLook.Size = new System.Drawing.Size(85, 49);
             this.actionLook.TabIndex = 3;
@@ -153,7 +153,7 @@
             // actionUse
             // 
             this.actionUse.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionUse.Location = new System.Drawing.Point(104, 450);
+            this.actionUse.Location = new System.Drawing.Point(107, 605);
             this.actionUse.Name = "actionUse";
             this.actionUse.Size = new System.Drawing.Size(89, 49);
             this.actionUse.TabIndex = 4;
@@ -164,7 +164,7 @@
             // actionItem
             // 
             this.actionItem.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionItem.Location = new System.Drawing.Point(327, 450);
+            this.actionItem.Location = new System.Drawing.Point(330, 605);
             this.actionItem.Name = "actionItem";
             this.actionItem.Size = new System.Drawing.Size(138, 49);
             this.actionItem.TabIndex = 5;
@@ -175,7 +175,7 @@
             // itemBox
             // 
             this.itemBox.Font = new System.Drawing.Font("Noto Naskh Arabic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemBox.Location = new System.Drawing.Point(471, 454);
+            this.itemBox.Location = new System.Drawing.Point(474, 605);
             this.itemBox.Name = "itemBox";
             this.itemBox.Size = new System.Drawing.Size(322, 49);
             this.itemBox.TabIndex = 6;
@@ -185,7 +185,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(199, 450);
+            this.button1.Location = new System.Drawing.Point(202, 605);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 49);
             this.button1.TabIndex = 7;
@@ -195,9 +195,10 @@
             // 
             // imageFrame
             // 
-            this.imageFrame.Location = new System.Drawing.Point(12, 12);
+            this.imageFrame.Location = new System.Drawing.Point(77, 3);
             this.imageFrame.Name = "imageFrame";
-            this.imageFrame.Size = new System.Drawing.Size(776, 305);
+            this.imageFrame.Size = new System.Drawing.Size(830, 512);
+            this.imageFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.imageFrame.TabIndex = 8;
             this.imageFrame.TabStop = false;
             this.imageFrame.Click += new System.EventHandler(this.imageFrame_Click);
@@ -206,15 +207,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 512);
+            this.ClientSize = new System.Drawing.Size(1032, 666);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.textField);
             this.Controls.Add(this.imageFrame);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.itemBox);
             this.Controls.Add(this.actionItem);
             this.Controls.Add(this.actionUse);
             this.Controls.Add(this.actionLook);
-            this.Controls.Add(this.textField);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Dungeon of Doom";
             this.Load += new System.EventHandler(this.Form1_Load);
