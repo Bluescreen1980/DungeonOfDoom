@@ -54,14 +54,22 @@ namespace DungeonOfDoom
 
         public static bool key2 = false;
         public static bool key3 = false;
+        public static bool kerberosDead = false;
 
-        public static string[,,] caveInfo = new string[21, 21, 21];
 
         //luodaan kolmiulotteinen array tiedoille, tämä jää alussa täyttämättä
         //info array on täytetty tiedoilla, x,y vastaavat locArrayn paikkaa, mutta z kertoo eri vaihtoehtoja 
         //nämä kaksi arrayta voisivat olla samat, mutta halusimme alustaa arrayn graafisesti.
 
-   
+        public static string[,,] caveInfo = new string[21, 21, 21];
+
+        //Luodaan lista tavaroille
+
+        public static List<string> items = new List<string>();
+        
+
+
+
         static void Main()
         {
             SetInfo();
@@ -73,7 +81,31 @@ namespace DungeonOfDoom
 
         public static void SetInfo()
         {
+            //Lisätään aloitustavarat listaan
+            items.Add("Whip");
+            items.Add("Hat");
+            /// Caveinfo [y,x,z]  
+            /// z = 0    Description of room (Look)
+            /// 1 picture filename
+            /// 2 Loot action description
+            /// 3 Item gained from Loot 
+            /// 4 Examine (closer description)
+            /// 5 Use item fail
+            /// 6 Use item success
+            /// 7 Item needed
+            /// 8 Item gained from use item
+            /// 9 
+            /// todo: add item to List
+
             caveInfo[19, 10, 0] = "Welcome to the Dungeon of Doom! Developed by Rami Sihvo, Finnish College Jam Game 2024. (Press North to start your adventure)";
+            caveInfo[19, 10, 1] = "../../picture.jpg";
+            caveInfo[19, 10, 2] = "You pick up some stones.";
+            caveInfo[19, 10, 3] = "stones";
+            caveInfo[19, 10, 4] = "You are standing on the doorway of Aztek temple (of Doom). Press North to continue.";
+            caveInfo[19, 10, 5] = "You do not have stone to throw";
+            caveInfo[19, 10, 6] = "You throw small stone into Aztek temple. You feel pretty good about yourself. Some moss is detached from wall because of your vandalism.";
+            caveInfo[19, 10, 7] = "stones";
+            caveInfo[19, 10, 8] = "moss";
             caveInfo[18, 10, 0] = "Daring lady doctor Croft has been lost to ancient Aztek Temple and it is up to you to find her. Here are stairs winding down to bowels of the earth.";
             caveInfo[17, 10, 0] = "Damp, ancient ruins. Probably some 2000 years old. About the age of my history teacher, that is.";
             caveInfo[16, 10, 0] = "You came across to ancient hall of previously unknown Aztek temple. Doctor Croft wasn't sure even what heathen god did they worship.";

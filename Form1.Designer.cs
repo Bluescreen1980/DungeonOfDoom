@@ -35,14 +35,15 @@
             this.goSouth = new System.Windows.Forms.Button();
             this.goEast = new System.Windows.Forms.Button();
             this.xyLabel = new System.Windows.Forms.Label();
-            this.pictureFrame = new System.Windows.Forms.TableLayoutPanel();
             this.textField = new System.Windows.Forms.Label();
             this.actionLook = new System.Windows.Forms.Button();
             this.actionUse = new System.Windows.Forms.Button();
             this.actionItem = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.itemBox = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.imageFrame = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageFrame)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -128,20 +129,6 @@
             this.xyLabel.Text = "x,y";
             this.xyLabel.Click += new System.EventHandler(this.xyLabel_Click);
             // 
-            // pictureFrame
-            // 
-            this.pictureFrame.ColumnCount = 1;
-            this.pictureFrame.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pictureFrame.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pictureFrame.Location = new System.Drawing.Point(12, 12);
-            this.pictureFrame.Name = "pictureFrame";
-            this.pictureFrame.RowCount = 1;
-            this.pictureFrame.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pictureFrame.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.pictureFrame.Size = new System.Drawing.Size(776, 295);
-            this.pictureFrame.TabIndex = 1;
-            this.pictureFrame.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
-            // 
             // textField
             // 
             this.textField.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,15 +172,15 @@
             this.actionItem.UseVisualStyleBackColor = true;
             this.actionItem.Click += new System.EventHandler(this.actionItem_Click);
             // 
-            // label1
+            // itemBox
             // 
-            this.label1.Font = new System.Drawing.Font("Noto Naskh Arabic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(471, 454);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 49);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Items: -";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.itemBox.Font = new System.Drawing.Font("Noto Naskh Arabic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemBox.Location = new System.Drawing.Point(471, 454);
+            this.itemBox.Name = "itemBox";
+            this.itemBox.Size = new System.Drawing.Size(322, 49);
+            this.itemBox.TabIndex = 6;
+            this.itemBox.Text = "Items: -";
+            this.itemBox.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
@@ -206,24 +193,34 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // imageFrame
+            // 
+            this.imageFrame.Location = new System.Drawing.Point(12, 12);
+            this.imageFrame.Name = "imageFrame";
+            this.imageFrame.Size = new System.Drawing.Size(776, 305);
+            this.imageFrame.TabIndex = 8;
+            this.imageFrame.TabStop = false;
+            this.imageFrame.Click += new System.EventHandler(this.imageFrame_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 512);
+            this.Controls.Add(this.imageFrame);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.itemBox);
             this.Controls.Add(this.actionItem);
             this.Controls.Add(this.actionUse);
             this.Controls.Add(this.actionLook);
             this.Controls.Add(this.textField);
-            this.Controls.Add(this.pictureFrame);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Dungeon of Doom";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageFrame)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,14 +232,14 @@
         private System.Windows.Forms.Button goWest;
         private System.Windows.Forms.Button goSouth;
         private System.Windows.Forms.Button goEast;
-        private System.Windows.Forms.TableLayoutPanel pictureFrame;
         private System.Windows.Forms.Label textField;
         private System.Windows.Forms.Button actionLook;
         private System.Windows.Forms.Button actionUse;
         private System.Windows.Forms.Button actionItem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label itemBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label xyLabel;
+        private System.Windows.Forms.PictureBox imageFrame;
     }
 }
 
