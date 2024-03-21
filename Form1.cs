@@ -109,7 +109,7 @@ namespace DungeonOfDoom
 
             //avainten ja erikoistilanteiden käsittely
 
-            //Todo: Jos item on Death => siirrä 1,1 kohtaan (ja näytä gameover screen)
+            //Todo: Jos item on Death => siirrä 2,2 kohtaan (ja näytä gameover screen)
             //Todo: Jos item on Win = > siirrä 19,19 kohtaan (ja näyä endgame screen).
 
             //Jos pelajaalla on listassa avain, muutetaan se bool-arvoksi
@@ -134,12 +134,14 @@ namespace DungeonOfDoom
                     checkWalls();
                     break;
                 }
-                else if (item == "Ankh")
+                
+                if (item == "Ankh" && Program.locX == 10 && Program.locY == 11)
                 {
                     Program.key3 = true;
-                    Program.items.Remove("Key2");
+                    Program.locX = 12;
+                    Program.locY = 11;
                     checkWalls();
-
+                    //siirretään vähän etenepäin
                     break;
                 }
             }
@@ -211,10 +213,17 @@ namespace DungeonOfDoom
             //päivitetään itemlist
             itemBox.Text = string.Join(" ", Program.items.ToArray());
 
-            //merkataan harmaalla jos napille ei ole toimintoa (null array)
+            if (Program.locX == 15 && Program.locY == 11)
+            {
+                Program.locX = 19;
+                Program.locY = 19;
+                updateRoom();
+                checkWalls();
+            }
         }
         public void checkWalls()
         {
+           
 
             
             if (Program.locArray[Program.locY - 1, Program.locX] == 2 & Program.key2 == true)
@@ -262,11 +271,6 @@ namespace DungeonOfDoom
                 goWest.Enabled = true;
                 textField.Text = "Used key!";
             }
-            else if (Program.locArray[Program.locY, Program.locX - 1] == 3 & Program.key3 == true)
-            {
-                goWest.Enabled = true;
-                textField.Text = "Used key!";
-            }
             else if (Program.locArray[Program.locY, Program.locX - 1] > 0)
             {
                 goWest.Enabled = false;
@@ -278,12 +282,12 @@ namespace DungeonOfDoom
 
             if (Program.locArray[Program.locY, Program.locX + 1] == 2 & Program.key2 == true)
             {
-                goWest.Enabled = true;
+                goEast.Enabled = true;
                 textField.Text = "Used key!";
             }
             else if (Program.locArray[Program.locY, Program.locX + 1] == 3 & Program.key3 == true)
             {
-                goWest.Enabled = true;
+                goEast.Enabled = true;
                 textField.Text = "Used key!";
             }
             else if (Program.locArray[Program.locY, Program.locX + 1] > 0)

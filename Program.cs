@@ -32,7 +32,7 @@ namespace DungeonOfDoom
             {8 ,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1},
             {9 ,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1},
             {10,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1},
-            {11,1,1,1,1,1,1,1,1,1,0,3,0,0,1,1,1,1,1,1,1},
+            {11,1,1,1,1,1,1,1,1,1,0,3,0,0,0,0,1,1,1,1,1},
             {12,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1},
             {13,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1},
             {14,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1},
@@ -85,6 +85,8 @@ namespace DungeonOfDoom
             items.Add("Whip");
             items.Add("Hat");
             items.Add("Cicar");
+            items.Add("Ankh");
+            items.Add("Ancient key");
             /// Caveinfo [y,x,z]  
             /// z = 0    Description of room (Look)
             /// 1 picture filename
@@ -197,12 +199,97 @@ namespace DungeonOfDoom
             caveInfo[11, 10, 4] = "There are strech marks on floor, maybe there is a hidden door?";
             caveInfo[11, 10, 5] = "You do not have ankh shaped key";
             caveInfo[11, 10, 6] = "You slot the Ankh to the hole and the eastern wall clicks open.";
-            caveInfo[11, 10, 7] = "Key3";
+            caveInfo[11, 10, 7] = "Ankh";
+            caveInfo[11, 10, 8] = "Ankh";
 
 
+            caveInfo[10, 10, 0] = "The corridor winds up.";
+            caveInfo[10, 10, 1] = "../../picture20.jpg";
+
+            caveInfo[9, 10, 0] = "Small stairs rising to another ancient part of the temple. You noticed a bit of charcoal littering the ground.";
+            caveInfo[9, 10, 1] = "../../picture21.jpg";
+            caveInfo[9, 10, 2] = "You scoop up some charoal. Now, how about combining it to something?";
+            caveInfo[9, 10, 3] = "charcoal";
+            caveInfo[9, 10, 4] = "Someone must have dropped the bag of charcoal here on accident.";
+            caveInfo[9, 10, 5] = "You do not have sulfur";
+            caveInfo[9, 10, 6] = "You mix some sulfur to charcoal";
+            caveInfo[9, 10, 7] = "sulfur";
+            caveInfo[9, 10, 8] = "sulfur+charcoal";
+       
+
+            caveInfo[8, 10, 0] = "Large hallway carved into volcanic rock. Corridors go to four different directions.";
+            caveInfo[8, 10, 1] = "../../picture22.jpg";
+
+            caveInfo[8, 11, 0] = "Hallway filled with spike traps";
+            caveInfo[8, 11, 1] = "../../picture23.jpg";
+
+            caveInfo[8, 12, 0] = "Crossroads room, with lipstick laying on floor.";
+            caveInfo[8, 12, 1] = "../../picture24.jpg";
+            //loot lipstick
+
+            caveInfo[7, 12, 0] = "Room filled with small metal statues";
+            caveInfo[7, 12, 1] = "../../picture25.jpg";
+            caveInfo[7, 12, 2] = "Maybe you could stock up ammo here when you get some black powder?";
+            caveInfo[7, 12, 4] = "Ancient azteks had steel? These statues range from large to very tiny, like something fitting to gun barrel";
+            caveInfo[7, 12, 5] = "You could use statues as ammo, if you had black powder.";
+            caveInfo[7, 12, 6] = "You gather statues as ammo";
+            caveInfo[7, 12, 7] = "black powder";
+            caveInfo[7, 12, 8] = "black powder+ammo";
+            caveInfo[7, 12, 9] = "../../cerberos_dead.jpg";
+
+            //loot ammo
+            caveInfo[8, 13, 0] = "Evil room, probably used for human sacrifices or gigs for Cheek.";
+            caveInfo[8, 13, 1] = "../../picture26.jpg";
+           
+            caveInfo[9, 12, 0] = "Aztek room filled with chemistry equipment. Apparently archeolgy team has visited here. ";
+            caveInfo[9, 12, 1] = "../../picture27.jpg";
+            caveInfo[9, 12, 2] = "Maybe you need to return here to make some ammunition when you find charcoal and sulfur.";
+            caveInfo[9, 12, 4] = "Suspicious amount of salpieter is present. Maybe someone tried to make ammunition here?";
+            caveInfo[9, 12, 5] = "You do not have enough items to make ammunition.";
+            caveInfo[9, 12, 6] = "You make some black powder!";
+            caveInfo[9, 12, 7] = "sulfur+charcoal";
+            caveInfo[9, 12, 8] = "black powder";
+
+            caveInfo[7, 10, 0] = "Large room, with equally large and mythical Cerberos looming over you. The monster waits your action!";
+            caveInfo[7, 10, 1] = "../../picture28.jpg";
+            caveInfo[7, 10, 2] = "You look around. While you fiddle with indecision Cerberus decides to eat you as snack.";
+            caveInfo[7, 10, 3] = "Death";
+            caveInfo[7, 10, 4] = "You are in large room with HUGE monster cerberos. Hope you have a good weapon!";
+            caveInfo[7, 10, 5] = "You do not have ammunition!";
+            caveInfo[7, 10, 6] = "You blast the Cerberos with ancient blunderbuss! The monster dies! Upon death you notice it was guarding golden ankh!";
+            caveInfo[7, 10, 7] = "black powder+ammo";
+            caveInfo[7, 10, 8] = "Ankh";
+
+            //picture here
+           
+            caveInfo[8, 9, 0] = "Corridor hewn to volcanic rock. It's getting hot in here!.";
+            caveInfo[8, 9, 1] = "../../picture29.jpg";
+
+            caveInfo[8, 8, 0] = "Very hot room lava flow!";
+            caveInfo[8, 8, 1] = "../../picture30.jpg";
+        
+            caveInfo[7, 8, 0] = "Very hot room with sulfur deposits on floor.";
+            caveInfo[7, 8, 1] = "../../picture31.jpg";
+            caveInfo[7, 8, 2] = "You pick up some sulfur.";
+            caveInfo[7, 8, 3] = "sulfur";
+            caveInfo[7, 8, 4] = "You are in the dead end but there's sulfur deposits here on floor.";
+            caveInfo[7, 8, 5] = "You do not have charcoal.";
+            caveInfo[7, 8, 6] = "You mix up some charcoal and sulfur. Only after that you think it might be toxic.";
+            caveInfo[7, 8, 7] = "charcoal";
+            caveInfo[7, 8, 8] = "sulfur+charcoal";
+
+            caveInfo[9, 8, 0] = "Lake of lava. Very very hot in here!";
+            caveInfo[9, 8, 1] = "../../picture32.jpg";
+
+            caveInfo[11, 13, 0] = "Passage to darkness through wierd dimension!";
+            caveInfo[11, 13, 1] = "../../picture33.jpg";
+
+            caveInfo[11, 14, 0] = "Some kind of celestial temple in front of you! You can see someone, a human female waiting you on its front door.";
+            caveInfo[11, 14, 1] = "../../picture34.jpg";
+
+            caveInfo[19, 19, 0] = "Doctor Croft: Why are you late?";
+            caveInfo[19, 19, 1] = "../../croft.jpg";
 
         }
-
-
     }
-}
+    }
