@@ -57,7 +57,7 @@
             this.tableLayoutPanel1.Controls.Add(this.goSouth, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.goEast, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.xyLabel, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(738, 490);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(929, 570);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.60241F));
@@ -132,7 +132,7 @@
             // textField
             // 
             this.textField.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textField.Location = new System.Drawing.Point(12, 490);
+            this.textField.Location = new System.Drawing.Point(136, 576);
             this.textField.Name = "textField";
             this.textField.Size = new System.Drawing.Size(729, 115);
             this.textField.TabIndex = 2;
@@ -142,9 +142,9 @@
             // actionLook
             // 
             this.actionLook.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionLook.Location = new System.Drawing.Point(16, 605);
+            this.actionLook.Location = new System.Drawing.Point(12, 12);
             this.actionLook.Name = "actionLook";
-            this.actionLook.Size = new System.Drawing.Size(85, 49);
+            this.actionLook.Size = new System.Drawing.Size(122, 49);
             this.actionLook.TabIndex = 3;
             this.actionLook.Text = "Look";
             this.actionLook.UseVisualStyleBackColor = true;
@@ -153,9 +153,9 @@
             // actionUse
             // 
             this.actionUse.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionUse.Location = new System.Drawing.Point(107, 605);
+            this.actionUse.Location = new System.Drawing.Point(12, 67);
             this.actionUse.Name = "actionUse";
-            this.actionUse.Size = new System.Drawing.Size(89, 49);
+            this.actionUse.Size = new System.Drawing.Size(122, 49);
             this.actionUse.TabIndex = 4;
             this.actionUse.Text = "Loot";
             this.actionUse.UseVisualStyleBackColor = true;
@@ -164,20 +164,20 @@
             // actionItem
             // 
             this.actionItem.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actionItem.Location = new System.Drawing.Point(330, 605);
+            this.actionItem.Location = new System.Drawing.Point(12, 177);
             this.actionItem.Name = "actionItem";
-            this.actionItem.Size = new System.Drawing.Size(138, 49);
+            this.actionItem.Size = new System.Drawing.Size(122, 49);
             this.actionItem.TabIndex = 5;
-            this.actionItem.Text = "Use item";
+            this.actionItem.Text = "Use";
             this.actionItem.UseVisualStyleBackColor = true;
             this.actionItem.Click += new System.EventHandler(this.actionItem_Click);
             // 
             // itemBox
             // 
             this.itemBox.Font = new System.Drawing.Font("Noto Naskh Arabic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemBox.Location = new System.Drawing.Point(485, 617);
+            this.itemBox.Location = new System.Drawing.Point(12, 241);
             this.itemBox.Name = "itemBox";
-            this.itemBox.Size = new System.Drawing.Size(507, 37);
+            this.itemBox.Size = new System.Drawing.Size(122, 192);
             this.itemBox.TabIndex = 6;
             this.itemBox.Text = "Items: -";
             this.itemBox.Click += new System.EventHandler(this.label1_Click);
@@ -185,7 +185,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Noto Sans Armenian", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(202, 605);
+            this.button1.Location = new System.Drawing.Point(12, 122);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 49);
             this.button1.TabIndex = 7;
@@ -195,10 +195,10 @@
             // 
             // imageFrame
             // 
-            this.imageFrame.Location = new System.Drawing.Point(99, 12);
+            this.imageFrame.Location = new System.Drawing.Point(140, 0);
             this.imageFrame.Name = "imageFrame";
-            this.imageFrame.Size = new System.Drawing.Size(830, 512);
-            this.imageFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imageFrame.Size = new System.Drawing.Size(1071, 567);
+            this.imageFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageFrame.TabIndex = 8;
             this.imageFrame.TabStop = false;
             this.imageFrame.Click += new System.EventHandler(this.imageFrame_Click);
@@ -207,15 +207,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 666);
+            this.ClientSize = new System.Drawing.Size(1223, 700);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.textField);
-            this.Controls.Add(this.imageFrame);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.itemBox);
             this.Controls.Add(this.actionItem);
             this.Controls.Add(this.actionUse);
             this.Controls.Add(this.actionLook);
+            this.Controls.Add(this.imageFrame);
             this.Name = "Form1";
             this.Text = "Dungeon of Doom";
             this.Load += new System.EventHandler(this.Form1_Load);

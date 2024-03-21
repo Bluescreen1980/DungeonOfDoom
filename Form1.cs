@@ -108,16 +108,39 @@ namespace DungeonOfDoom
             }
 
             //avainten ja erikoistilanteiden käsittely
+
+            //Todo: Jos item on Death => siirrä 1,1 kohtaan (ja näytä gameover screen)
+            //Todo: Jos item on Win = > siirrä 19,19 kohtaan (ja näyä endgame screen).
+
             //Jos pelajaalla on listassa avain, muutetaan se bool-arvoksi
             foreach (string item in Program.items)
             {
-                if (item == "Temple key")
+                if (item == "Death")
+                {
+                    Program.locY = 2; 
+                    Program.locX = 2;
+                    updateRoom();
+                    checkWalls();
+                    goSouth.Enabled = false;
+                    goNorth.Enabled = false;
+                    goWest.Enabled = false;
+                    goEast.Enabled = false;
+                    break;
+                }
+                if (item == "Key2")
                 {
                     Program.key2 = true;
+                    Program.items.Remove("Key2");
+                    checkWalls();
+                    break;
                 }
                 else if (item == "Ankh")
                 {
                     Program.key3 = true;
+                    Program.items.Remove("Key2");
+                    checkWalls();
+
+                    break;
                 }
             }
 
@@ -193,11 +216,8 @@ namespace DungeonOfDoom
         public void checkWalls()
         {
 
-            if (Program.locArray[Program.locY - 1, Program.locX] > 0)
-            {
-                goNorth.Enabled = false;
-            }
-            else if (Program.locArray[Program.locY - 1, Program.locX] == 2 & Program.key2 == true)
+            
+            if (Program.locArray[Program.locY - 1, Program.locX] == 2 & Program.key2 == true)
             {
                 goNorth.Enabled = true;
                 textField.Text = "Used key!";
@@ -207,16 +227,17 @@ namespace DungeonOfDoom
                 goNorth.Enabled = true;
                 textField.Text = "Used key!";
             }
+            else if (Program.locArray[Program.locY - 1, Program.locX] > 0)
+            {
+                goNorth.Enabled = false;
+            }
             else
             {
                 goNorth.Enabled = true;
             }
 
-            if (Program.locArray[Program.locY + 1, Program.locX] > 0)
-            {
-                goSouth.Enabled = false;
-            }
-            else if (Program.locArray[Program.locY + 1, Program.locX] == 2 & Program.key2 == true)
+           
+            if (Program.locArray[Program.locY + 1, Program.locX] == 2 & Program.key2 == true)
             {
                 goSouth.Enabled = true;
                 textField.Text = "Used key!";
@@ -226,16 +247,17 @@ namespace DungeonOfDoom
                 goSouth.Enabled = true;
                 textField.Text = "Used key!";
             }
+            else if (Program.locArray[Program.locY + 1, Program.locX] > 0)
+            {
+                goSouth.Enabled = false;
+            }
             else
             {
                 goSouth.Enabled = true;
             }
 
-            if (Program.locArray[Program.locY, Program.locX - 1] > 0)
-            {
-                goWest.Enabled = false;
-            }
-            else if (Program.locArray[Program.locY, Program.locX - 1] == 2 & Program.key2 == true)
+           
+            if (Program.locArray[Program.locY, Program.locX - 1] == 2 & Program.key2 == true)
             {
                 goWest.Enabled = true;
                 textField.Text = "Used key!";
@@ -245,16 +267,16 @@ namespace DungeonOfDoom
                 goWest.Enabled = true;
                 textField.Text = "Used key!";
             }
+            else if (Program.locArray[Program.locY, Program.locX - 1] > 0)
+            {
+                goWest.Enabled = false;
+            }
             else
             {
                 goWest.Enabled = true;
             }
 
-            if (Program.locArray[Program.locY, Program.locX + 1] > 0)
-            {
-                goEast.Enabled = false;
-            }
-            else if (Program.locArray[Program.locY, Program.locX + 1] == 2 & Program.key2 == true)
+            if (Program.locArray[Program.locY, Program.locX + 1] == 2 & Program.key2 == true)
             {
                 goWest.Enabled = true;
                 textField.Text = "Used key!";
@@ -263,6 +285,10 @@ namespace DungeonOfDoom
             {
                 goWest.Enabled = true;
                 textField.Text = "Used key!";
+            }
+            else if (Program.locArray[Program.locY, Program.locX + 1] > 0)
+            {
+                goEast.Enabled = false;
             }
             else
             {
