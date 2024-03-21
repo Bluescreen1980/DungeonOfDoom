@@ -85,8 +85,11 @@ namespace DungeonOfDoom
             items.Add("Whip");
             items.Add("Hat");
             items.Add("Cicar");
-            items.Add("Ankh");
-            items.Add("Ancient key");
+
+            //just for testing:
+            //items.Add("Ankh");
+            // items.Add("Ancient key");
+
             /// Caveinfo [y,x,z]  
             /// z = 0    Description of room (Look)
             /// 1 picture filename
