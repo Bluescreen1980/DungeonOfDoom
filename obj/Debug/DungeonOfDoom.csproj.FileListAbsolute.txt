@@ -1,0 +1,10 @@
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.csproj.AssemblyReference.cache
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.Form1.resources
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.Properties.Resources.resources
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.csproj.GenerateResource.cache
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.csproj.CoreCompileInputs.cache
+C:\Users\Rami\source\repos\DungeonOfDoom\bin\Debug\DungeonOfDoom.exe.config
+C:\Users\Rami\source\repos\DungeonOfDoom\bin\Debug\DungeonOfDoom.exe
+C:\Users\Rami\source\repos\DungeonOfDoom\bin\Debug\DungeonOfDoom.pdb
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.exe
+C:\Users\Rami\source\repos\DungeonOfDoom\obj\Debug\DungeonOfDoom.pdb
